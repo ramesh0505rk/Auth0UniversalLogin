@@ -13,8 +13,9 @@ export const appConfig: ApplicationConfig = {
       domain: 'dev-7clsee1nzr8ucaon.us.auth0.com',
       clientId: 'kEiYOOyLnSw1dGOy59GgHyR3sr0K9Qet',
       authorizationParams: {
-        redirect_uri: 'http://localhost:4200/callback'
-      }
+        redirect_uri: 'http://localhost:4200'
+      },
+      cacheLocation: 'localstorage'
     })
   ]
 };
