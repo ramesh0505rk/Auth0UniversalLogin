@@ -1,1 +1,8 @@
-<p>home works!</p>
+<div *ngIf="user$ | async as user">
+    <h1>Welcome, {{ user.name }}!</h1>
+    <pre>{{ user | json }}</pre>
+    <button (click)="logout()">Log Out</button>
+</div>
+<div *ngIf="!(user$ | async)">
+    <p>Redirecting to login...</p>
+</div>
